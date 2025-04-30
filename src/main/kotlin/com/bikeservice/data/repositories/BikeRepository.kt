@@ -25,6 +25,7 @@ class BikeRepository {
 
     suspend fun createBike(bike: Bike): Bike = dbQuery {
         val id = bike.id.takeIf { it.isNotBlank() } ?: UUID.randomUUID().toString()
+        println("Creating bike with id: $id")
 
         BikeTable.insert {
             it[BikeTable.id] = id
