@@ -41,7 +41,7 @@ class BikeRepository {
         val updatedRows = BikeTable.update({ BikeTable.id eq id }) {
             it[name] = bike.name
             it[model] = bike.model
-            it[color] = bike.color
+            it[color] = bike.name
             it[mileage] = bike.mileage.toBigDecimal()
         }
 
