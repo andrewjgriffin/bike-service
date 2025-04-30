@@ -33,7 +33,8 @@ class BikeServiceTest {
         val bike = Bike(
             name = "Test Bike",
             model = "Test Model",
-            color = "Red"
+            color = "Red",
+            mileage = 0.0
         )
 
         val createdBike = service.createBike(bike)
@@ -53,7 +54,8 @@ class BikeServiceTest {
         val bike = Bike(
             name = "Original Bike",
             model = "Original Model",
-            color = "Blue"
+            color = "Blue",
+            mileage = 0.0,
         )
 
         val createdBike = service.createBike(bike)
@@ -73,6 +75,4 @@ class BikeServiceTest {
         assertEquals("Updated Bike", retrievedBike.name)
         assertEquals("Updated Model", retrievedBike.model)
     }
-
-    // TODO: Add test for addMileage
 }
