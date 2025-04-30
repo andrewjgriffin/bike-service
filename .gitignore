@@ -25,6 +25,9 @@ build/
 *.rar
 hs_err_pid*
 
+# Tools
+tools
+
 # H2 Database files
 *.db
 *.h2.db
