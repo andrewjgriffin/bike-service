@@ -9,5 +9,5 @@ data class Bike(
     val name: String,
     val model: String,
     val color: String,
-    val mileage: Double = 0.0
+    val mileage: Double,
 )

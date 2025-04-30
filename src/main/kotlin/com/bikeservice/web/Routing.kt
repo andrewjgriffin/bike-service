@@ -35,5 +35,10 @@ fun Route.bikeRoutes() {
         put("/{id}") {
             controller.updateBike(this.context)
         }
+
+        // Ride a bike
+        post("/{id}/ride") {
+            controller.rideBike(this.context)
+        }
     }
 }
